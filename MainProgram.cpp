@@ -158,6 +158,8 @@ IntArray::IntArray(const IntArray& other) {
     data= new int[capacity];
     for (int i = 0; i < count; i++)
         data[i] = other.data[i];    
+    
+     Tracker::objectCreated();
    
 }
 
@@ -292,4 +294,3 @@ int main() {
     cout << "=== Lab Complete ===" << endl;
     return 0;
 }
-
